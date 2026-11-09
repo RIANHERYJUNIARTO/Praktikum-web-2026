@@ -1,10 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
 
-// Pasang <App /> ke elemen <div id="root"> di index.html
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Mengidentifikasi elemen div dengan id 'root' pada index.html
+const rootElement = document.getElementById('root');
+
+// Membuat root React DOM dan merender komponen utama <App />
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
